@@ -1,0 +1,22 @@
+.field {
+	background-color: #9AF;
+	color: #FFF;
+	width: 31.33333%;
+	height: 31.33333%;
+	float: left;
+    margin: 1%;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 13rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.field[disabled] {
+	cursor: auto;
+	pointer-events: none;
+}
+.circle {
+	font-size: 11rem;
+}

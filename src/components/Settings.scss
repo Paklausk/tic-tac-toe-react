@@ -1,0 +1,96 @@
+.settings-container {
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
+	text-align: center;
+}
+.settings-button {
+	background-color: #FFF;
+	color: rgba(153, 170, 255, 0.45);
+	width: 15rem;
+	height: 15rem;
+	border-radius: 50%;
+	font-size: 11rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	margin: 0 auto;
+	&:hover {
+		border: 1px solid #9AF;
+		background-color: #EEF;
+		color: #9AF;
+		margin: 0 auto;
+		width: calc(15rem - 2px);
+		height: calc(15rem - 2px);
+	}
+	&:active {
+		font-size: 10rem;
+	}
+}
+.arrow-down {
+	width: 0px;
+	height: 0px;
+	border-left: 1.5rem solid transparent;
+	border-right: 1.5rem solid transparent;
+	border-top: 1.5rem solid #9AF;
+	margin: 0 auto 0 auto;
+}
+.settings-menu {
+	color: #999;
+	border: 1px solid #9AF;
+	padding: 2rem;
+	border-radius: 1rem;
+	font-size: 2rem;
+	.title {
+		font-size: 3rem;
+		font-weight: bolder;
+	}
+	hr {
+		border: none;
+		height: 0.2rem;
+		background-color: #999;
+	}
+	.difficulty {
+		.button {
+			&:first-child {
+				border-radius: 1rem 1rem 0 0;
+			}
+			&:last-child {
+				border-radius: 0 0 1rem 1rem;
+			}
+			&:hover, &.active {
+				color: white;
+				border: #000 solid 1px;
+				padding: 0;
+			}
+			&.active {
+				cursor: default;
+			}
+			cursor: pointer;
+			padding: 1px 0;
+			text-transform: uppercase;
+		}
+		.easy {
+			&:hover, &.active {
+				background-color: rgb(58, 167, 0);
+				border-color: #252;
+			}
+			background-color: rgb(226, 255, 183);
+		}
+		.medium {
+			&:hover, &.active {
+				background-color: rgb(168, 123, 0);
+				border-color: #740;
+			}
+			background-color: rgb(255, 233, 172);
+		}
+		.hard {
+			&:hover, &.active {
+				background-color: rgb(255, 40, 40);
+				border-color: #711;
+			}
+			background-color: rgb(255, 174, 174);
+		}
+	}
+}
